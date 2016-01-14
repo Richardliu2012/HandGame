@@ -1,6 +1,7 @@
 package com.handgame.gui;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -30,6 +31,7 @@ public class HandGame extends JFrame {
 		jf.setVisible(true);
 		jf.setSize(800, 800);
 		jf.setLayout(new BorderLayout());
+		jf.setBackground(Color.WHITE);
 		jf.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
 		Container container = jf.getContentPane();
@@ -71,7 +73,6 @@ public class HandGame extends JFrame {
 		});
         
 
-//	    JLabel bottomlabel = new JLabel();
         bottomlabel.setIcon(new ImageIcon("pic/bottom.png"));
         bottomlabel.setHorizontalAlignment(JLabel.CENTER);
         bottomlabel.setText("Hello World");
@@ -103,7 +104,7 @@ public class HandGame extends JFrame {
     		  clientchoice = 0;
     		  HandGame hg = new HandGame();
     		  result = hg.startGame(mode, clientchoice);
-    		  bottomlabel.setText("   "+result+"   ");
+    		  bottomlabel.setText(" You "+result+"   ");
       	  }  
         });
         
@@ -112,7 +113,7 @@ public class HandGame extends JFrame {
     		  clientchoice = 1;
     		  HandGame hg = new HandGame();
     		  result = hg.startGame(mode, clientchoice);
-    		  bottomlabel.setText("   "+result+"   ");
+    		  bottomlabel.setText(" You "+result+"   ");
       	  }  
         });
         
@@ -121,7 +122,7 @@ public class HandGame extends JFrame {
     		  clientchoice = 2;
     		  HandGame hg = new HandGame();
     		  result = hg.startGame(mode, clientchoice);
-    		  bottomlabel.setText("   "+result+"   ");
+    		  bottomlabel.setText(" You "+result+"   ");
       	  }  
         });
         
@@ -130,7 +131,7 @@ public class HandGame extends JFrame {
     		  clientchoice = 3;
     		  HandGame hg = new HandGame();
     		  result = hg.startGame(mode, clientchoice);
-    		  bottomlabel.setText("   "+result+"   ");
+    		  bottomlabel.setText(" You "+result+"   ");
       	  }  
         });
         
@@ -139,7 +140,7 @@ public class HandGame extends JFrame {
     		  clientchoice = 4;
     		  HandGame hg = new HandGame();
     		  result = hg.startGame(mode, clientchoice);
-    		  bottomlabel.setText("   "+result+"   ");
+    		  bottomlabel.setText(" You "+result+"   ");
       	  }  
         });
         
