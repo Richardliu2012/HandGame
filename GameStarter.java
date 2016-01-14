@@ -17,20 +17,16 @@ public class GameStarter {
 		
 		//Below codes start the game
 		//Mode 0 is Random Mode where computer will pick a number randomly
-        //Mode 1 is Advance Mode where computer will try to learn from client's previous gesture
+                //Mode 1 is Advance Mode where computer will try to learn from client's previous gesture
 		
 		String[] result;
-	
-		if (mode == 0){
-		   cs.setClientchoice(clientchoice);;
-           result = new BasicEngine().findResult(cs);
-           System.out.println("You choose "+result[1]+" .");
-           System.out.println("Computer choose "+result[2]+" .");
-           System.out.println("You "+result[0]+" .");
-		}
-		else if (mode == 1){
-		   
-		}
+		cs.setClientchoice(clientchoice);
+		
+		
+	        result = (mode == 0) ? new BasicEngine().findResult(cs):new AdvanceEngine().findResult(cs);
+                System.out.println("You choose "+result[1]+" .");
+                System.out.println("Computer choose "+result[2]+" .");
+                System.out.println("You "+result[0]+" .");
 	}
 	
 	public static void main(String[] args){
